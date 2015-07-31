@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class OrientationTest {
 
     @Test
-    public void canChangeOrientation() {
+    public void canChangeOrientationForLeftCommand() {
         ArrayList<Character> directions = new ArrayList<>();
         directions.add('N');
         directions.add('E');
@@ -20,5 +20,19 @@ public class OrientationTest {
         orientation.changeOrientation('L');
 
         assertEquals('W', orientation.getOrientation());
+    }
+
+    @Test
+    public void canChangeOrientationForRightCommand() {
+        ArrayList<Character> directions = new ArrayList<>();
+        directions.add('N');
+        directions.add('E');
+        directions.add('S');
+        directions.add('W');
+        Orientation orientation = new Orientation('N',directions);
+
+        orientation.changeOrientation('R');
+
+        assertEquals('E', orientation.getOrientation());
     }
 }

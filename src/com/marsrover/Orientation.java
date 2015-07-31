@@ -21,6 +21,13 @@ public class Orientation {
                 indexOfOrientation = 3;
             currentOrientation = directions.get(indexOfOrientation);
         }
+        if(command == 'R') {
+            indexOfOrientation++;
+            if(indexOfOrientation > 3)
+                indexOfOrientation = 0;
+            currentOrientation = directions.get(indexOfOrientation);
+
+        }
     }
 
     public char getOrientation() {
