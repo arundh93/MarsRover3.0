@@ -1,5 +1,5 @@
 package com.marsrover;
 
 public interface RoverCommand {
-    void execute();
+    void execute(Rover rover);
 }

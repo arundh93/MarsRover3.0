@@ -30,5 +30,4 @@ public class ParserTest {
 
         assertEquals(MoveForwardCommand.class, parser.parseInput(input).getClass());
     }
-
 }

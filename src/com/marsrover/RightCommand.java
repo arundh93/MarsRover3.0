@@ -3,7 +3,7 @@ package com.marsrover;
 public class RightCommand implements RoverCommand {
 
     @Override
-    public void execute() {
+    public void execute(Rover rover) {
 
     }
 }
