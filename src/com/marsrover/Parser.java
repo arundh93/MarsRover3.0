@@ -7,6 +7,6 @@ public class Parser {
         else  if(input == 'R')
             return new RightCommand();
         else
-            return null;
+            return new MoveForwardCommand();
     }
 }

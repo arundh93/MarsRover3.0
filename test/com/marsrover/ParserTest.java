@@ -22,4 +22,13 @@ public class ParserTest {
 
         assertEquals(RightCommand.class, parser.parseInput(input).getClass());
     }
+
+    @Test
+    public void canCreateMoveForwardCommand() {
+        Parser parser = new Parser();
+        char input = 'M';
+
+        assertEquals(MoveForwardCommand.class, parser.parseInput(input).getClass());
+    }
+
 }
