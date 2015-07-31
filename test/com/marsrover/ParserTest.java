@@ -14,4 +14,12 @@ public class ParserTest {
 
         assertEquals(LeftCommand.class, parser.parseInput(input).getClass());
     }
+
+    @Test
+    public void canCreateRightCommand() {
+        Parser parser = new Parser();
+        char input = 'R';
+
+        assertEquals(RightCommand.class, parser.parseInput(input).getClass());
+    }
 }
