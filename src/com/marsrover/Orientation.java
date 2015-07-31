@@ -14,7 +14,7 @@ public class Orientation {
         indexOfOrientation = directions.indexOf(currentOrientation);
     }
 
-    public void changeOrientation(char command) {
+    public void changeDirection(char command) {
         if (command == 'L') {
             indexOfOrientation--;
             if(indexOfOrientation < 0)
@@ -26,7 +26,6 @@ public class Orientation {
             if(indexOfOrientation > 3)
                 indexOfOrientation = 0;
             currentOrientation = directions.get(indexOfOrientation);
-
         }
     }
 

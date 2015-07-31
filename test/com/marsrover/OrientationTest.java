@@ -17,7 +17,7 @@ public class OrientationTest {
         directions.add('W');
         Orientation orientation = new Orientation('N',directions);
 
-        orientation.changeOrientation('L');
+        orientation.changeDirection('L');
 
         assertEquals('W', orientation.getOrientation());
     }
@@ -31,7 +31,7 @@ public class OrientationTest {
         directions.add('W');
         Orientation orientation = new Orientation('N',directions);
 
-        orientation.changeOrientation('R');
+        orientation.changeDirection('R');
 
         assertEquals('E', orientation.getOrientation());
     }
